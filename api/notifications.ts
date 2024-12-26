@@ -13,6 +13,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       process.env.VITE_FIREBASE_VAPID_PRIVATE_KEY
     );
 
+    
     const { subscription, title, body, data } = req.body;
     
     if (!subscription || !subscription.endpoint) {
